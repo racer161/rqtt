@@ -1,4 +1,4 @@
-#![feature(async_await)]
+#![feature(async_closure)]
 pub mod server;
 pub mod codec;
 

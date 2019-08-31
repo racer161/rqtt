@@ -27,16 +27,16 @@ impl MQTTServer
 
                     //let (reader, writer) = &mut stream.split();
 
-                    let b_reader : BufReader<runtime::net::tcp::TcpStream> = BufReader::new(stream); 
+                    let mut b_reader : BufReader<runtime::net::tcp::TcpStream> = BufReader::new(stream); 
 
                     loop
                     {
+                        let mut byteBuffer = [0;24];
                         //let sentence
-                        b_reader.poll_read(buf: &mut [u8]);
-                        print!("{}", str::from_utf8(b_reader.buffer()).unwrap());
+                        b_reader.read(&mut byteBuffer);
+                        print!("{}", str::from_utf8(&byteBuffer).unwrap());
                     }
-
-                    //reader.copy_into(writer).await?;
+                    
                     Ok::<(), std::io::Error>(())
                 })
                 .await

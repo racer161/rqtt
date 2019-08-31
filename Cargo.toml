@@ -5,11 +5,6 @@ authors = ["Ethan Spurlock <ethan@spurlock.io>"]
 edition = "2018"
 
 [dependencies]
-byteorder = "1"
-bytes = "0.4.12"
-log = "0.4.7"
-quick-error = "1.0"
-failure = "0.1.5"
 cargo-edit = "0.3.3"
 runtime = "0.3.0-alpha.6"
 futures-preview = { version = "=0.3.0-alpha.17", features = ["async-await", "nightly"] }
