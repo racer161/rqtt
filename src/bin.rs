@@ -1,7 +1,3 @@
-//! A simple echo server.
-//!
-//! Run the server and connect to it with `nc 127.0.0.1 8080`.
-//! The server will wait for you to enter lines of text and then echo them back.
 use futures::executor::block_on;
 
 #[runtime::main]
