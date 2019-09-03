@@ -2,20 +2,8 @@ use futures::prelude::*;
 use futures::io::{BufReader};
 use std::convert::TryInto;
 
-
 //This file implements data reading traits corresponding to the Data Representation section of the 
 //MQTT 5.0 spec here: https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901006
-
-
-
-///adapted from: https://www.reddit.com/r/rust/comments/3xgeo0/biginner_question_how_can_i_get_the_value_of_a/
-/// gets the bit at position `n`
-/// MQTT: Bits in a byte are labelled 7 to 0. Bit number 7 is the most significant bit, the least significant bit is assigned bit number 0.
-pub fn get_bit_at(input: u8, n: u8) -> bool 
-{
-    if n < 8 { input & (1 << n) != 0 } 
-    else { panic!("Tried to read bit outside of range!"); }
-}
 
 //TODO: Navigate the dangerous waters of asynchronously reading from an Async
 //BufferedReader without copying into a local variable

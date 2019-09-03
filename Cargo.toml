@@ -8,6 +8,9 @@ edition = "2018"
 cargo-edit = "0.3.3"
 runtime = "0.3.0-alpha.6"
 futures-preview = { version = "=0.3.0-alpha.17", features = ["async-await", "nightly"] }
+num-traits = "0.2"
+num-derive = "0.2"
+
 
 [lib]
 name = "rqtt"
