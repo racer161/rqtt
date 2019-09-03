@@ -6,7 +6,7 @@ A Rust based MQTT server with focuses on
 
 ## Development Approach
 RQTT tries to follow the MQTT guidelines to the letter where possible and follows Rust code 
-best practices where the MQTT 5.0 specification is ambiguous.
+best practices where the MQTT 5.0 specification is ambiguous. The guidlines for MQTT version 5.0 are specified [here.](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901000)
 
 ## Timeline
 ---
@@ -34,4 +34,7 @@ Progress:
 ## Motivation
 ---
 
-The world's need for low latency high throughput connections for practical devices is growing everyday. MQTT started out as a protocol for 
+The world's need for low latency high throughput connections for practical devices is growing everyday. MQTT started out as a protocol for industrial machinery to communicate with a host of managing and regulating servers but quickly progressed into not only what most IoT devices use but also mainstream messaging applicaitons. The need is clear for a robust version of this popular protocol and what better language to write it in than the one that claims to be the language for software that will stand the test of time. This project aims to create a safe, scalable and robust server for these small but important communications in our everyday lives. 
+
+This project also aims to include as few 3rd party libraries as possible and to be no-std compatible since many instances of rqtt will be running on devices without an OS.
+
