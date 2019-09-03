@@ -8,14 +8,14 @@ const RETAIN_BIT : u8 = 0;
 //traits for reading the publish flags
 pub trait PublishFlags
 {
-    fn read_QoS(self) -> PublishQoS;
+    fn read_qoS(self) -> PublishQoS;
     fn is_duplicate(self) -> bool;
     fn is_retain(self) -> bool;
 }
 
 impl PublishFlags for u8
 {
-    fn read_QoS(self) -> PublishQoS
+    fn read_qoS(self) -> PublishQoS
     {
         let raw_qos = self & 0b0110u8; 
 

@@ -35,7 +35,7 @@ trait MQTTPacketStream
     pub async fn read_byte(reader: &mut BufReader<runtime::net::tcp::TcpStream>) -> u8
     {
         let mut buffer : [u8;1] = [0];
-        reader.read_exact(&mut buffer).await;
+        let bytecount = reader.read_exact(&mut buffer).await;
         //TODO: convert this to a result to pass it up
         u8::from_be_bytes(buffer.try_into().unwrap())
     }
@@ -43,7 +43,7 @@ trait MQTTPacketStream
     pub async fn read_two_byte_integer(reader: &mut BufReader<runtime::net::tcp::TcpStream>) -> u16
     {
         let mut buffer : [u8;2] = [0,0];
-        reader.read_exact(&mut buffer).await;
+        let bytecount = reader.read_exact(&mut buffer).await;
         //TODO: convert this to a result to pass it up
         u16::from_be_bytes(buffer.try_into().unwrap())
     }
@@ -51,7 +51,7 @@ trait MQTTPacketStream
     pub async fn read_four_byte_integer(reader: &mut BufReader<runtime::net::tcp::TcpStream>) -> u32
     {
         let mut buffer : [u8;4] = [0,0,0,0];
-        reader.read_exact(&mut buffer).await;
+        let bytecount = reader.read_exact(&mut buffer).await;
         //TODO: convert this to a result to pass it up
         u32::from_be_bytes(buffer.try_into().unwrap())
     }
@@ -60,7 +60,7 @@ trait MQTTPacketStream
     {
         let length : u16 = read_two_byte_integer(&mut reader).await;
         let mut buffer : Vec<u8> = Vec::with_capacity(length as usize);
-        reader.read_exact(&mut buffer).await;
+        let bytecount = reader.read_exact(&mut buffer).await;
 
         String::from_utf8(buffer).unwrap()
     }
@@ -103,7 +103,7 @@ trait MQTTPacketStream
     {
         let length : u16 = read_two_byte_integer(&mut reader).await;
         let mut buffer : Vec<u8> = Vec::with_capacity(length as usize);
-        reader.read_exact(&mut buffer).await;
+        let bytecount = reader.read_exact(&mut buffer).await;
 
         buffer
     }
