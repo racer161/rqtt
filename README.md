@@ -12,7 +12,7 @@ best practices where the MQTT 5.0 specification is ambiguous. The guidlines for 
 ---
 Progress:
 - [x] 1.0 Data Representation - 9/1/2019
-- [ ] 2.0 Control Packet Format Parsing - 9/16/2019
+- [x] 2.0 Control Packet Format Parsing - 9/16/2019
 * Reason Codes 
 * Payload Specifications and Properties
 - [ ] 3.0 MQTT Control Packet Handling - 10/1/2019

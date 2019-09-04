@@ -17,13 +17,13 @@ use std::convert::TryInto;
 //it just sounds like a lifetime definition nightmare
 //I'm not sure how lifetimes interact with the buffer and according to the github page 
 //multiple async lifetimes on a single task may not be implemented yet. 
-trait MQTTPacketStream
+/*pub trait MQTTPacketStream
 {
     fn read_byte(&mut self) -> std::io::Result<u8>;
     fn read_two_byte_integer(&mut self) -> std::io::Result<u16>;
     fn read_four_byte_integer(&mut self) -> std::io::Result<u32>;
     fn read_utf8_encoded_string(&mut self) -> String;
-}
+}*/
 
 //TODO: Theres currently no support for async trait functions because presumably they need to 
 //be wrapped in ARC to be thread safe (but maybe not in all cases)
