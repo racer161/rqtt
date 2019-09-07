@@ -13,8 +13,8 @@ pub struct Connect {
 
 //impl Connect
 //{
-    pub async fn read_connect_packet() -> Connect
+    pub async fn read_connect_packet(mut reader: &mut BufReader<runtime::net::tcp::TcpStream>) -> Connect
     {
-        
+
     }
 //}

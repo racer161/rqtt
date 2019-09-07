@@ -2,6 +2,8 @@ mod publish_flags;
 mod fixed_header;
 mod low_level_read;
 mod packet;
+mod properties;
+mod reason_code;
 
 use futures::io::{BufReader};
 
