@@ -2,29 +2,34 @@
 
 ### [1.5 Data representation](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901006)
 
-1.5.1 Bits
+#### 1.5.1 Bits
 
-1.5.2 Two Byte Integer
+#### 1.5.2 Two Byte Integer
 
-1.5.3 Four Byte Integer
+#### 1.5.3 Four Byte Integer
 
-1.5.4 UTF-8 Encoded String
+#### 1.5.4 UTF-8 Encoded String
+- [ ] The character data in a UTF-8 Encoded String MUST be well-formed UTF-8 as defined by the Unicode specification [Unicode] and restated in RFC 3629 [RFC3629]. In particular, the character data MUST NOT include encodings of code points between U+D800 and U+DFFF
+- [ ] A UTF-8 Encoded String MUST NOT include an encoding of the null character U+0000.
+- [ ] A UTF-8 encoded sequence 0xEF 0xBB 0xBF is always interpreted as U+FEFF ("ZERO WIDTH NO-BREAK SPACE") wherever it appears in a string and MUST NOT be skipped over or stripped off by a packet receiver
 
-1.5.5 Variable Byte Integer
 
-1.5.6 Binary Data
+#### 1.5.5 Variable Byte Integer
+- [ ] The encoded value MUST use the minimum number of bytes necessary to represent the value
 
-1.5.7 UTF-8 String Pair
+#### 1.5.6 Binary Data
 
-1.6 Security
+#### 1.5.7 UTF-8 String Pair
 
-1.7 Editing convention
+### 1.6 Security
 
-1.8 Change history
+### 1.7 Editing convention
 
-1.8.1 MQTT v3.1.1
+### 1.8 Change history
 
-1.8.2 MQTT v5.0
+#### 1.8.1 MQTT v3.1.1
+
+#### 1.8.2 MQTT v5.0
 
 # [2        MQTT Control Packet format](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901019)
 
