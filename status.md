@@ -1,14 +1,4 @@
-1        Introduction
-
-1.0 Intellectual property rights policy
-
-1.1 Organization of the MQTT specification
-
-1.2 Terminology
-
-1.3 Normative references
-
-1.4 Non-normative references
+# 1        Introduction
 
 1.5 Data representation
 
@@ -36,7 +26,7 @@
 
 1.8.2 MQTT v5.0
 
-2        MQTT Control Packet format
+# 2        MQTT Control Packet format
 
 2.1 Structure of an MQTT Control Packet
 
@@ -62,7 +52,7 @@
 
 2.4 Reason Code
 
-3        MQTT Control Packets
+# 3        MQTT Control Packets
 
 3.1 CONNECT – Connection Request
 
@@ -222,7 +212,7 @@
 
 3.3.2.3.2 Payload Format Indicator
 
-3.3.2.3.3 Message Expiry Interval`
+3.3.2.3.3 Message Expiry Interval
 
 3.3.2.3.4 Topic Alias
 
@@ -456,7 +446,7 @@
 
 3.15.4 AUTH Actions
 
-4        Operational behavior
+# 4        Operational behavior
 
 4.1 Session State
 
@@ -520,7 +510,7 @@
 
 4.13.2 Other errors
 
-5        Security (non-normative)
+# 5        Security (non-normative)
 
 5.1 Introduction
 
@@ -568,11 +558,11 @@
 
 5.4.12.4 Industry specific security profiles
 
-6        Using WebSocket as a network transport
+# 6        Using WebSocket as a network transport
 
 6.1 IANA considerations
 
-7        Conformance
+# 7        Conformance
 
 7.1 Conformance clauses
 
