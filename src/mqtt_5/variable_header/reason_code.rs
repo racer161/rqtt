@@ -2,7 +2,7 @@ use num_derive::FromPrimitive;
 use num_traits::FromPrimitive;
 
 use futures::io::{BufReader};
-use super::low_level_read::*;
+use super::super::low_level_read::*;
 
 #[derive(FromPrimitive)]
 pub enum ReasonCode
@@ -56,8 +56,12 @@ pub enum ReasonCode
 
 impl ReasonCode
 {
-    fn from_u8()
+    pub fn from_u8(code: u8) -> ReasonCode
     {
-
+        match FromPrimitive::from_u8(code)
+        {
+            Some(code) => return code,
+            None => panic!("couldn't parse reason code because it was malformed!")
+        }
     }
 }

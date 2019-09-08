@@ -1,6 +1,6 @@
 #![feature(async_closure)]
 pub mod server;
-pub mod codec;
+pub mod mqtt_5;
 
 #[cfg(test)]
 mod test;
