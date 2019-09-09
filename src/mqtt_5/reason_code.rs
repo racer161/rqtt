@@ -2,7 +2,7 @@ use num_derive::FromPrimitive;
 use num_traits::FromPrimitive;
 
 use futures::io::{BufReader};
-use super::super::low_level_read::*;
+use super::low_level_read::*;
 
 #[derive(FromPrimitive)]
 pub enum ReasonCode

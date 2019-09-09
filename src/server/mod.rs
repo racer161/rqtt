@@ -3,6 +3,8 @@ use runtime::net::TcpListener;
 use futures::io::{BufReader};
 use std::str;
 
+use super::mqtt_5;
+
 pub struct MQTTServer
 {
 
@@ -29,13 +31,8 @@ impl MQTTServer
 
                     let mut b_reader : BufReader<runtime::net::tcp::TcpStream> = BufReader::new(stream); 
 
-                    loop
-                    {
-                        let mut byteBuffer = [0;24];
-                        //let sentence
-                        b_reader.read(&mut byteBuffer);
-                        print!("{}", str::from_utf8(&byteBuffer).unwrap());
-                    }
+                    mqtt_5::read_packet(&mut b_reader).await;
+                        //print!("{}", str::from_utf8(&byteBuffer).unwrap());
                     
                     Ok::<(), std::io::Error>(())
                 })

@@ -4,12 +4,11 @@ const BLANK_FLAG : u8 = 0b0000u8;
 const BIT1_FLAG : u8 = 0b0010u8;
 
 pub mod duplicate;
-pub mod qos;
 pub mod retain;
 
 use super::FixedHeader;
 use duplicate::Duplicate;
-use qos::QoS;
+use super::super::qos::QoS;
 use retain::Retain;
 
 use std::error;

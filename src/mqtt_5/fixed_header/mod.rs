@@ -1,10 +1,11 @@
 use futures::io::{BufReader};
 use super::low_level_read::*;
+use std::fmt::{self, Debug, Display};
 
 mod flags;
 use flags::Flags;
 use flags::duplicate::Duplicate;
-use flags::qos::QoS;
+use super::qos::QoS;
 use flags::retain::Retain;
 
 
@@ -70,10 +71,16 @@ pub async fn read_control_packet_type_and_flags(mut reader: &mut BufReader<runti
 {
     let first_byte = read_byte(&mut reader).await;
 
-    //get the four bit values via bitmask AND
-    let raw_type : u8 = (first_byte & 0b11110000u8);
-    let raw_flag : u8 = (first_byte & 0b00001111u8);
+    //get the four bit values via bitwise AND
+    let raw_type : u8 = first_byte & 0b00001111u8;
+    let raw_flag : u8 = first_byte & 0b1111u8;
 
     FixedHeader::from_u8_and_flags(raw_type, raw_flag)
 
+}
+
+impl std::fmt::Debug for FixedHeader {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{:?}", self)
+    }
 }
