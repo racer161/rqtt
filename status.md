@@ -56,83 +56,83 @@
 
   - [ ] 3.1 CONNECT – Connection Request
 
-  - [ ] 3.1.1 CONNECT Fixed Header
+    - [x] 3.1.1 CONNECT Fixed Header
 
-  - [ ] 3.1.2 CONNECT Variable Header
+    - [ ] 3.1.2 CONNECT Variable Header
 
-  - [ ] 3.1.2.1 Protocol Name
+        - [x] 3.1.2.1 Protocol Name
 
-  - [ ] 3.1.2.2 Protocol Version
+        - [x] 3.1.2.2 Protocol Version
 
-  - [ ] 3.1.2.3 Connect Flags
+        - [x] 3.1.2.3 Connect Flags
 
-  - [ ] 3.1.2.4 Clean Start
+        - [ ] 3.1.2.4 Clean Start
 
-  - [ ] 3.1.2.5 Will Flag
+        - [ ] 3.1.2.5 Will Flag
 
-  - [ ] 3.1.2.6 Will QoS
+        - [ ] 3.1.2.6 Will QoS
 
-  - [ ] 3.1.2.7 Will Retain
+        - [ ] 3.1.2.7 Will Retain
 
-  - [ ] 3.1.2.8 User Name Flag
+        - [ ] 3.1.2.8 User Name Flag
 
-  - [ ] 3.1.2.9 Password Flag
+        - [ ] 3.1.2.9 Password Flag
 
-  - [ ] 3.1.2.10 Keep Alive
+        - [ ] 3.1.2.10 Keep Alive
 
-  - [ ] 3.1.2.11 CONNECT Properties
+        - [ ] 3.1.2.11 CONNECT Properties
 
-  - [ ] 3.1.2.11.1 Property Length
+        - [ ] 3.1.2.11.1 Property Length
 
-  - [ ] 3.1.2.11.2 Session Expiry Interval
+        - [ ] 3.1.2.11.2 Session Expiry Interval
 
-  - [ ] 3.1.2.11.3 Receive Maximum
+        - [ ] 3.1.2.11.3 Receive Maximum
 
-  - [ ] 3.1.2.11.4 Maximum Packet Size
+        - [ ] 3.1.2.11.4 Maximum Packet Size
 
-  - [ ] 3.1.2.11.5 Topic Alias Maximum
+        - [ ] 3.1.2.11.5 Topic Alias Maximum
 
-  - [ ] 3.1.2.11.6 Request Response Information
+        - [ ] 3.1.2.11.6 Request Response Information
 
-  - [ ] 3.1.2.11.7 Request Problem Information
+        - [ ] 3.1.2.11.7 Request Problem Information
 
-  - [ ] 3.1.2.11.8 User Property
+        - [ ] 3.1.2.11.8 User Property
 
-  - [ ] 3.1.2.11.9 Authentication Method
+        - [ ] 3.1.2.11.9 Authentication Method
 
-  - [ ] 3.1.2.11.10 Authentication Data
+        - [ ] 3.1.2.11.10 Authentication Data
 
-  - [ ] 3.1.2.12 Variable Header non-normative example
+        - [ ] 3.1.2.12 Variable Header non-normative example
 
-  - [ ] 3.1.3 CONNECT Payload
+        - [ ] 3.1.3 CONNECT Payload
 
-  - [ ] 3.1.3.1 Client Identifier (ClientID)
+        - [ ] 3.1.3.1 Client Identifier (ClientID)
 
-  - [ ] 3.1.3.2 Will Properties
+        - [ ] 3.1.3.2 Will Properties
 
-  - [ ] 3.1.3.2.1 Property Length
+        - [ ] 3.1.3.2.1 Property Length
 
-  - [ ] 3.1.3.2.2 Will Delay Interval
+        - [ ] 3.1.3.2.2 Will Delay Interval
 
-  - [ ] 3.1.3.2.3 Payload Format Indicator
+        - [ ] 3.1.3.2.3 Payload Format Indicator
 
-  - [ ] 3.1.3.2.4 Message Expiry Interval
+        - [ ] 3.1.3.2.4 Message Expiry Interval
 
-  - [ ] 3.1.3.2.5 Content Type
+        - [ ] 3.1.3.2.5 Content Type
 
-  - [ ] 3.1.3.2.6 Response Topic
+        - [ ] 3.1.3.2.6 Response Topic
 
-  - [ ] 3.1.3.2.7 Correlation Data
+        - [ ] 3.1.3.2.7 Correlation Data
 
-  - [ ] 3.1.3.2.8 User Property
+        - [ ] 3.1.3.2.8 User Property
 
-  - [ ] 3.1.3.3 Will Topic
+        - [ ] 3.1.3.3 Will Topic
 
-  - [ ] 3.1.3.4 Will Payload
+        - [ ] 3.1.3.4 Will Payload
 
-  - [ ] 3.1.3.5 User Name
+        - [ ] 3.1.3.5 User Name
 
-  - [ ] 3.1.3.6 Password
+        - [ ] 3.1.3.6 Password
 
   - [ ] 3.1.4 CONNECT Actions
 
