@@ -1,5 +1,4 @@
 # RQTT
----
 A Rust based MQTT server with focuses on
 - Asynchronous scaling using the new async/await syntax in Rust 
 - Zero-copy parsing using asynchronous buffered reads
@@ -9,7 +8,7 @@ RQTT tries to follow the MQTT guidelines to the letter where possible and follow
 best practices where the MQTT 5.0 specification is ambiguous. The guidlines for MQTT version 5.0 are specified [here.](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901000)
 
 ## Timeline
----
+#### For a more detailed list of what is and isn't implemented see this [issue](https://github.com/racer161/rqtt/issues/1#issue-490671750)
 Progress:
 - [x] 1.0 Data Representation - 9/1/2019
 - [x] 2.0 Control Packet Format Parsing - 9/16/2019
