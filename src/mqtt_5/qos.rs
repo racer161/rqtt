@@ -1,6 +1,7 @@
+#[derive(Debug, Clone, PartialEq)]
 pub enum QoS
 {
-    AtMostOnce = 0,
+    AtMostOnce,
     AtLeastOnce,
     ExactlyOnce
 }

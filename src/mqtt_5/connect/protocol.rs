@@ -1,17 +1,20 @@
+#[derive(Debug, Clone, PartialEq)]
 pub enum Protocol
 {
-    MQTT(u8),
+    MQTT,
     MQIsdp
 }
 
 impl Protocol
 {
-    pub fn from_string(protocol : &str, version_level : u8) -> Protocol
+    pub fn from_string(protocol : &str) -> Protocol
     {
         match protocol 
         {
-            "MQTT" => Protocol::MQTT(version_level),
+            "MQTT" => Protocol::MQTT,
             _ => panic!("Couldn't parse control packet because the client tried to use a protocol other than MQTT!")
         }
     }
 }
+
+pub type ProtocolLevel = u8;

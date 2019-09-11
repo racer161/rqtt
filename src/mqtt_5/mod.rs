@@ -6,12 +6,14 @@ mod payload;
 mod qos;
 
 
-mod connect;
+//mod connect;
+//use connect::{protocol::Protocol, protocol::ProtocolLevel, connect_flags::ConnectFlags, keep_alive::KeepAlive};
+
 
 use futures::io::{BufReader};
+use futures::prelude::*;
 
 use payload::Payload;
-use low_level_read::*;
 
 //TODO implement this as a trait of a BufferedStream when Rust 
 pub async fn read_packet(mut reader: &mut BufReader<runtime::net::tcp::TcpStream>)// -> Packet
@@ -21,26 +23,37 @@ pub async fn read_packet(mut reader: &mut BufReader<runtime::net::tcp::TcpStream
 
     let remaining_length = low_level_read::read_variable_byte_integer(&mut reader).await;
 
-	println!("header: {:?}", fixed_header::FixedHeader::CONNECT);
+	let mut remaining_packet_data : Vec<u8> = Vec::with_capacity(remaining_length as usize);
+    let read_result = reader.read_exact(&mut remaining_packet_data).await;
+	
+	/*
+	match read_result
+	{
+		//make sure we read all the bytes we needed
+		Ok(n) => assert_eq!(n, remaining_length),
+		Err(e) => panic!(e)
+	}*/
+
+	println!("header: {:?}", header);
 
 }
 
-/*
+
 #[derive(Debug, Clone, PartialEq)]
 pub enum Packet {
-	CONNECT(VariableHeader, Payload),
-	CONNACK(VariableHeader),
-	PUBLISH(VariableHeader, Payload),
-	PUBACK(VariableHeader),
-	PUBREC(VariableHeader),
-	PUBREL(VariableHeader),
-	PUBCOMP(VariableHeader),
-	SUBSCRIBE(VariableHeader, Payload),
-	SUBACK(VariableHeader, Payload),
-	UNSUBSCRIBE(VariableHeader, Payload),
-	UNSUBACK(VariableHeader, Payload),
+	//CONNECT(Protocol, ProtocolLevel, ConnectFlags, KeepAlive),
+	CONNACK,
+	PUBLISH(Payload),
+	PUBACK,
+	PUBREC,
+	PUBREL,
+	PUBCOMP,
+	SUBSCRIBE(Payload),
+	SUBACK(Payload),
+	UNSUBSCRIBE(Payload),
+	UNSUBACK(Payload),
 	PINGREQ,
 	PINGRESP,
 	DISCONNECT,
 	AUTH
-}*/
+}

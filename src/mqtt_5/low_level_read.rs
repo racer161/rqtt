@@ -32,12 +32,14 @@ use std::convert::TryInto;
 
 //impl MQTTPacketStream for BufReader<runtime::net::tcp::TcpStream>
 //{
+
+    
     pub async fn read_byte(reader: &mut BufReader<runtime::net::tcp::TcpStream>) -> u8
     {
         let mut buffer : [u8;1] = [0];
         let bytecount = reader.read_exact(&mut buffer).await;
         //TODO: convert this to a result to pass it up
-        u8::from_be_bytes(buffer.try_into().unwrap())
+        u8::from_be_bytes(buffer)
     }
 
     pub async fn read_two_byte_integer(reader: &mut BufReader<runtime::net::tcp::TcpStream>) -> u16
@@ -45,7 +47,7 @@ use std::convert::TryInto;
         let mut buffer : [u8;2] = [0,0];
         let bytecount = reader.read_exact(&mut buffer).await;
         //TODO: convert this to a result to pass it up
-        u16::from_be_bytes(buffer.try_into().unwrap())
+        u16::from_be_bytes(buffer)
     }
 
     pub async fn read_four_byte_integer(reader: &mut BufReader<runtime::net::tcp::TcpStream>) -> u32
@@ -53,7 +55,7 @@ use std::convert::TryInto;
         let mut buffer : [u8;4] = [0,0,0,0];
         let bytecount = reader.read_exact(&mut buffer).await;
         //TODO: convert this to a result to pass it up
-        u32::from_be_bytes(buffer.try_into().unwrap())
+        u32::from_be_bytes(buffer)
     }
 
     pub async fn read_utf8_encoded_string(mut reader: &mut BufReader<runtime::net::tcp::TcpStream>) -> String

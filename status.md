@@ -30,23 +30,23 @@
 
 - [x] 2.1 Structure of an MQTT Control Packet
 
-- [x] 2.1.1 Fixed Header
+    - [x] 2.1.1 Fixed Header
 
-- [x] 2.1.2 MQTT Control Packet type
+    - [x] 2.1.2 MQTT Control Packet type
 
-- [x] 2.1.3 Flags
+    - [x] 2.1.3 Flags
 
-- [x] 2.1.4 Remaining Length
+    - [x] 2.1.4 Remaining Length
 
 - [x] 2.2 Variable Header
 
-- [x] 2.2.1 Packet Identifier
+    - [x] 2.2.1 Packet Identifier
 
-- [x] 2.2.2 Properties
+    - [x] 2.2.2 Properties
 
-- [x] 2.2.2.1 Property Length
+    - [x] 2.2.2.1 Property Length
 
-- [x] 2.2.2.2 Property
+    - [x] 2.2.2.2 Property
 
 - [ ] 2.3 Payload
 
@@ -140,91 +140,91 @@
 
   - [ ] 3.2.1 CONNACK Fixed Header
 
-  - [ ] 3.2.2 CONNACK Variable Header
+    - [ ] 3.2.2 CONNACK Variable Header
 
-  - [ ] 3.2.2.1 Connect Acknowledge Flags
+        - [ ] 3.2.2.1 Connect Acknowledge Flags
 
-  - [ ] 3.2.2.1.1 Session Present
+        - [ ] 3.2.2.1.1 Session Present
 
-  - [ ] 3.2.2.2 Connect Reason Code
+        - [ ] 3.2.2.2 Connect Reason Code
 
-  - [ ] 3.2.2.3 CONNACK Properties
+        - [ ] 3.2.2.3 CONNACK Properties
 
-  - [ ] 3.2.2.3.1 Property Length
+        - [ ] 3.2.2.3.1 Property Length
 
-  - [ ] 3.2.2.3.2 Session Expiry Interval
+        - [ ] 3.2.2.3.2 Session Expiry Interval
 
-  - [ ] 3.2.2.3.3 Receive Maximum
+        - [ ] 3.2.2.3.3 Receive Maximum
 
-  - [ ] 3.2.2.3.4 Maximum QoS
+        - [ ] 3.2.2.3.4 Maximum QoS
 
-  - [ ] 3.2.2.3.5 Retain Available
+        - [ ] 3.2.2.3.5 Retain Available
 
-  - [ ] 3.2.2.3.6 Maximum Packet Size
+        - [ ] 3.2.2.3.6 Maximum Packet Size
 
-  - [ ] 3.2.2.3.7 Assigned Client Identifier
+        - [ ] 3.2.2.3.7 Assigned Client Identifier
 
-  - [ ] 3.2.2.3.8 Topic Alias Maximum
+        - [ ] 3.2.2.3.8 Topic Alias Maximum
 
-  - [ ] 3.2.2.3.9 Reason String
+        - [ ] 3.2.2.3.9 Reason String
 
-  - [ ] 3.2.2.3.10 User Property
+        - [ ] 3.2.2.3.10 User Property
 
-  - [ ] 3.2.2.3.11 Wildcard Subscription Available
+        - [ ] 3.2.2.3.11 Wildcard Subscription Available
 
-  - [ ] 3.2.2.3.12 Subscription Identifiers Available
+        - [ ] 3.2.2.3.12 Subscription Identifiers Available
 
-  - [ ] 3.2.2.3.13 Shared Subscription Available
+        - [ ] 3.2.2.3.13 Shared Subscription Available
 
-  - [ ] 3.2.2.3.14 Server Keep Alive
+        - [ ] 3.2.2.3.14 Server Keep Alive
 
-  - [ ] 3.2.2.3.15 Response Information
+        - [ ] 3.2.2.3.15 Response Information
 
-  - [ ] 3.2.2.3.16 Server Reference
+        - [ ] 3.2.2.3.16 Server Reference
 
-  - [ ] 3.2.2.3.17 Authentication Method
+        - [ ] 3.2.2.3.17 Authentication Method
 
-  - [ ] 3.2.2.3.18 Authentication Data
+        - [ ] 3.2.2.3.18 Authentication Data
 
-  - [ ] 3.2.3 CONNACK Payload
+    - [ ] 3.2.3 CONNACK Payload
 
   - [ ] 3.3 PUBLISH – Publish message
 
-  - [ ] 3.3.1 PUBLISH Fixed Header
+    - [ ] 3.3.1 PUBLISH Fixed Header
 
-  - [ ] 3.3.1.1 DUP
+        - [ ] 3.3.1.1 DUP
 
-  - [ ] 3.3.1.2 QoS
+        - [ ] 3.3.1.2 QoS
 
-  - [ ] 3.3.1.3 RETAIN
+        - [ ] 3.3.1.3 RETAIN
 
-  - [ ] 3.3.1.4 Remaining Length
+        - [ ] 3.3.1.4 Remaining Length
 
-  - [ ] 3.3.2 PUBLISH Variable Header
+    - [ ] 3.3.2 PUBLISH Variable Header
 
-  - [ ] 3.3.2.1 Topic Name
+        - [ ] 3.3.2.1 Topic Name
 
-  - [ ] 3.3.2.2 Packet Identifier
+        - [ ] 3.3.2.2 Packet Identifier
 
-  - [ ] 3.3.2.3 PUBLISH Properties
+        - [ ] 3.3.2.3 PUBLISH Properties
 
-  - [ ] 3.3.2.3.1 Property Length
+        - [ ] 3.3.2.3.1 Property Length
 
-  - [ ] 3.3.2.3.2 Payload Format Indicator
+        - [ ] 3.3.2.3.2 Payload Format Indicator
 
-  - [ ] 3.3.2.3.3 Message Expiry Interval
+        - [ ] 3.3.2.3.3 Message Expiry Interval
 
-  - [ ] 3.3.2.3.4 Topic Alias
+        - [ ] 3.3.2.3.4 Topic Alias
 
-  - [ ] 3.3.2.3.5 Response Topic
+        - [ ] 3.3.2.3.5 Response Topic
 
-  - [ ] 3.3.2.3.6 Correlation Data
+        - [ ] 3.3.2.3.6 Correlation Data
 
-  - [ ] 3.3.2.3.7 User Property
+        - [ ] 3.3.2.3.7 User Property
 
-  - [ ] 3.3.2.3.8 Subscription Identifier
+        - [ ] 3.3.2.3.8 Subscription Identifier
 
-  - [ ] 3.3.2.3.9 Content Type
+        - [ ] 3.3.2.3.9 Content Type
 
   - [ ] 3.3.3 PUBLISH Payload
 
