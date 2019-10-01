@@ -44,7 +44,7 @@ Progress:
 rqtt is not expected to replace [rumqttd](https://github.com/tekjar/rumqttd) anytime soon. rqtt is a sibling of rumqttd looking to employ async/await and other optimization techniques that may eventually make their way over to rumqttd. For now, if you're looking for a stable MQTT server and don't have time to wait for async/await to stabilize then you should look to [rumqttd](https://github.com/tekjar/rumqttd).
 
 ## Benchmarks and Goals
-Since rqtt is a sibling to rumqttd with focuses on scalibility via greater asynchronous integration it makes since that rqtt would try to perform better than rumqttd in benchmarks. Success in this area would be achieving a lower serve time in this benchmark also used by rumqttd:
+Since rqtt is a sibling to rumqttd with focuses on scalibility via greater asynchronous integration it makes sense that rqtt would try to perform better than rumqttd in benchmarks. Success in this area would be achieving a lower serve time in this benchmark also used by rumqttd:
 
 #### Subscribe to a wildcard topic & publish 1 million qos1 messages (and wait for acks) to the broker on local machine
  
