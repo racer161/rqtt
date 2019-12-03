@@ -6,10 +6,13 @@ edition = "2018"
 
 [dependencies]
 cargo-edit = "0.3.3"
-runtime = "0.3.0-alpha.6"
-futures-preview = { version = "=0.3.0-alpha.17", features = ["async-await", "nightly"] }
 num-traits = "0.2"
 num-derive = "0.2"
+mqtt_5 = { path = "C:\\Users\\Ethan\\Desktop\\mqtt_5" }
+
+[dependencies.async-std]
+version = "1.2.0"
+features = ["attributes"]
 
 [lib]
 name = "rqtt"

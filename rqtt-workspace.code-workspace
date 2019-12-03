@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "C:\\Users\\Ethan\\Desktop\\mqtt_5"
+		},
+		{
+			"path": "C:\\Users\\Ethan\\Desktop\\bitreader-async"
 		}
 	],
 	"settings": {}
