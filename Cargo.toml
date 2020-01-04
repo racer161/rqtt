@@ -6,8 +6,6 @@ edition = "2018"
 
 [dependencies]
 cargo-edit = "0.3.3"
-num-traits = "0.2"
-num-derive = "0.2"
 mqtt_5 = { path = "C:\\Users\\Ethan\\Desktop\\mqtt_5" }
 bitreader_async = { path = "C:\\Users\\Ethan\\Desktop\\bitreader-async" }
 
