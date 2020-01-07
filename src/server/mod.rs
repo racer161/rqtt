@@ -4,10 +4,10 @@ use async_std::io::{BufReader};
 use async_std::stream::{ StreamExt};
 use async_std::task;
 
-use mqtt_5::data_representation::FromBitReader;
+use packattack::FromBitReader;
 use bitreader_async::BitReader;
 
-use std::time::{Duration, Instant};
+use std::time::{ Instant};
 
 pub async fn new(addr_string : String) -> async_std::io::Result<()>
 {
@@ -44,8 +44,6 @@ pub async fn new(addr_string : String) -> async_std::io::Result<()>
                     Err(e) => panic!(e)
                 }
 
-                
-                //handler::handle_packet(& packet);
             }
 
             //let mut b_writer : BufWriter<async_std::net::TcpStream> = BufWriter::new(stream);

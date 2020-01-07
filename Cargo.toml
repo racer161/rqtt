@@ -3,11 +3,16 @@ name = "rqtt"
 version = "0.1.0"
 authors = ["Ethan Spurlock <ethan@spurlock.io>"]
 edition = "2018"
+description = "An MQTT server written with focus on async, zero-copy, and safety"
+license = "MIT"
+keywords = ["MQTT", "Server", "Broker"]
+repository = "https://github.com/vectorizer-labs/rqtt"
 
 [dependencies]
 cargo-edit = "0.3.3"
-mqtt_5 = { path = "C:\\Users\\Ethan\\Desktop\\mqtt_5" }
-bitreader_async = { path = "C:\\Users\\Ethan\\Desktop\\bitreader-async" }
+packattack = "0.1.0"
+mqtt_5 = "0.1.1"
+bitreader_async = "0.2.0"
 
 [dependencies.async-std]
 version = "1.2.0"
